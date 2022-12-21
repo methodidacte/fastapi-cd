@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/")
 def index():
-    return {"data": "Application ran successfully - FastAPI with GitHub Actions (staging)"}
+    return {"data": "Application ran successfully - FastAPI with GitHub Actions"}
   
   
 if __name__ == "__main__":
