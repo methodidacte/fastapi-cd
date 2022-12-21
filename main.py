@@ -10,9 +10,8 @@ app = FastAPI()
 
 @app.get("/")
 def index():
-    return {"data": "Application ran successfully - FastAPI"}
+    return {"data": "Application ran successfully - FastAPI with GitHub Actions"}
   
   
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
-    
