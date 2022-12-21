@@ -19,7 +19,9 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        
+
+    - run: |
+        az acr list
         
     - name: Login to Azure Container Registry
       uses: azure/docker-login@v1
